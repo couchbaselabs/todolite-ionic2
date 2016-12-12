@@ -1,0 +1,61 @@
+{
+  "name": "ionic-hello-world",
+  "author": {
+     "name": "Nic Raboy",
+     "url": "https://www.nraboy.com"
+ },
+  "homepage": "http://www.couchbase.com",
+  "private": true,
+  "scripts": {
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
+  },
+  "dependencies": {
+    "@angular/common": "2.1.1",
+    "@angular/compiler": "2.1.1",
+    "@angular/compiler-cli": "2.1.1",
+    "@angular/core": "2.1.1",
+    "@angular/forms": "2.1.1",
+    "@angular/http": "2.1.1",
+    "@angular/platform-browser": "2.1.1",
+    "@angular/platform-browser-dynamic": "2.1.1",
+    "@angular/platform-server": "2.1.1",
+    "@ionic/storage": "1.1.6",
+    "cordova-couchbase": "^1.0.0",
+    "ionic-angular": "2.0.0-rc.3",
+    "ionic-native": "2.2.3",
+    "ionicons": "3.0.0",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "0.6.26"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "0.0.45",
+    "typescript": "2.0.6"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-statusbar",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard",
+    {
+      "locator": "https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git",
+      "id": "com.couchbase.lite.phonegap"
+    }
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    },
+    {
+      "platform": "android",
+      "version": "",
+      "locator": "android"
+    }
+  ],
+  "description": "A simple Ionic 2 example that has data syncrhonization with Couchbase"
+}
